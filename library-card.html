@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vallejo Public Library - Library Card Application</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Library Logo" />
+      </div>
+      <div class="header-title">
+        <h1>The Vallejo Public Library</h1>
+      </div>
+      <div class="header-buttons">
+        <button class="yellow-button">Log In / My Account</button>
+        <button class="yellow-button">Get a Library Card</button>
+      </div>
+    </header>
+
+    <div class="search-bar-container">
+      <div class="search-bar">
+        <button class="search-button">Search</button>
+        <select>
+          <option>Books & More</option>
+        </select>
+        <input type="text" placeholder="ex. title, author or keyword" />
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library-card.html">Library Card</a></li>
+        <li><a href="book-catalog.html">Book Catalog</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Library Card Application Form</h2>
+        <p>
+          Please fill in the form below to apply for a library card. After
+          submitting your application, it will be processed by our staff, and
+          you will be notified via email.
+        </p>
+        <form action="/apply-card" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="images/logo.jpg" alt="Library Logo" />
+        <div class="footer-title">
+          <p><strong>The Vallejo</strong><br />Public Library</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="location">
+          <img
+            src="images/location.png"
+            alt="Location Icon"
+            class="footer-icon"
+          />
+          <p><strong>Location</strong></p>
+          <p>1526 Book Lane,<br />Vallejo, CA 95489</p>
+        </div>
+        <div class="contact">
+          <img
+            src="images/contact.png"
+            alt="Contact Icon"
+            class="footer-icon"
+          />
+          <p><strong>Contact Us</strong></p>
+          <p>Email: support@vallejolibrary.com</p>
+          <p>Phone Number: 123-456-7890</p>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2024 Vallejo Public Library. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vallejo Public Library - Book Catalog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Top header section with logo and search -->
+      <div class="top-header">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Library Logo" />
+        </div>
+        <div class="header-title">
+          <h1>The Vallejo Public Library</h1>
+        </div>
+        <div class="header-buttons">
+          <button class="yellow-button">Log In / My Account</button>
+          <button class="yellow-button">Get a Library Card</button>
+        </div>
+      </div>
+
+      <!-- Search bar section -->
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <select>
+            <option>Books & More</option>
+          </select>
+          <input type="text" placeholder="ex. title, author or keyword" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library-card.html">Library Card</a></li>
+          <li><a href="book-catalog.html">Book Catalog</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Search results section -->
+      <section class="search-results">
+        <h2>Title search: The Great Gatsby</h2>
+        <p><a href="#">View as keyword search</a></p>
+
+        <div class="filters-and-results">
+          <div class="filters">
+            <h3>Filter your results by...</h3>
+            <ul>
+              <li>Available Now</li>
+              <li>
+                Format
+                <ul>
+                  <li>Books</li>
+                  <li>Movies & TV</li>
+                  <li>Music & Sound</li>
+                </ul>
+              </li>
+              <li>New at the library...</li>
+              <li>Titles I can...</li>
+              <li>Topic</li>
+              <li>Regions</li>
+              <li>Author</li>
+              <li>Languages</li>
+            </ul>
+          </div>
+
+          <div class="results">
+            <!-- Sort and pagination on the same line -->
+            <div class="pagination-sort-container">
+              <div class="sort-by-relevance">Sort by: Relevance</div>
+              <div class="results-count">1 to 10 of 34 results</div>
+            </div>
+
+            <div class="book-result">
+              <img src="images/book.jpg" alt="The Great Gatsby Book Cover" />
+              <div class="book-info">
+                <p>
+                  <strong>The Great Gatsby</strong><br />by Fitzgerald, F. Scott
+                </p>
+                <p><strong>Book - 2018</strong><br />Available</p>
+              </div>
+              <div class="button-container">
+                <button class="green-button">Place hold</button>
+                <button class="grey-button">For Later</button>
+              </div>
+            </div>
+
+            <div class="book-result">
+              <img src="images/book.jpg" alt="Book Cover" />
+              <div class="book-info">
+                <p><strong>Book - 2014</strong><br />Available</p>
+              </div>
+              <div class="button-container">
+                <button class="green-button">Place hold</button>
+                <button class="grey-button">For Later</button>
+              </div>
+            </div>
+
+            <div class="book-result">
+              <img src="images/book.jpg" alt="Book Cover" />
+              <div class="book-info">
+                <p><strong>Book - 2013</strong><br />Available</p>
+              </div>
+              <div class="button-container">
+                <button class="green-button">Place hold</button>
+                <button class="grey-button">For Later</button>
+              </div>
+            </div>
+
+            <div class="book-result">
+              <img src="images/book.jpg" alt="Book Cover" />
+              <div class="book-info">
+                <p><strong>Book - 1998</strong><br />Available</p>
+              </div>
+              <div class="button-container">
+                <button class="green-button">Place hold</button>
+                <button class="grey-button">For Later</button>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <!-- Pagination buttons can be added here -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-logo">
+        <img src="images/logo.jpg" alt="Library Logo" />
+        <p><strong>The Vallejo</strong><br />Public Library</p>
+      </div>
+      <div class="footer-info">
+        <div class="location">
+          <img
+            src="images/location.png"
+            alt="Location Icon"
+            class="footer-icon"
+          />
+          <p><strong>Location</strong></p>
+          <p>1526 Book Lane, Vallejo, CA 95489</p>
+        </div>
+        <div class="contact">
+          <img
+            src="images/contact.png"
+            alt="Contact Icon"
+            class="footer-icon"
+          />
+          <p><strong>Contact Us</strong></p>
+          <p>Email: support@vallejolibrary.com</p>
+          <p>Phone Number: 123-456-7890</p>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2024 Vallejo Public Library. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
