@@ -7,44 +7,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <!-- Top header section with logo and search -->
-      <div class="top-header">
-        <div class="logo">
-          <img src="images/logo.jpg" alt="Library Logo" />
-        </div>
-        <div class="header-title">
-          <h1>The Vallejo Public Library</h1>
-        </div>
-        <div class="header-buttons">
-          <button class="yellow-button">Log In / My Account</button>
-          <button class="yellow-button">Get a Library Card</button>
-        </div>
+    <!-- Header section -->
+    <header class="top-header">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Library Logo" />
       </div>
-
-      <!-- Search bar section -->
-      <div class="search-bar-container">
-        <div class="search-bar">
-          <select>
-            <option>Books & More</option>
-          </select>
-          <input type="text" placeholder="ex. title, author or keyword" />
-          <button class="search-button">Search</button>
-        </div>
+      <div class="header-title">
+        <h1>The Vallejo Public Library</h1>
       </div>
-
-      <!-- Navigation bar -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library-card.html">Library Card</a></li>
-          <li><a href="book-catalog.html">Book Catalog</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <div class="header-buttons">
+        <button class="yellow-button">Log In / My Account</button>
+        <button class="yellow-button">Get a Library Card</button>
+      </div>
     </header>
 
+    <!-- Search bar section -->
+    <div class="search-bar-container">
+      <div class="search-bar">
+        <button class="search-button">Search</button>
+        <select>
+          <option>Books & More</option>
+        </select>
+        <input type="text" placeholder="ex. title, author or keyword" />
+      </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library-card.html">Library Card</a></li>
+        <li><a href="book-catalog.html">Book Catalog</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content section -->
     <main>
       <!-- Search results section -->
       <section class="search-results">
@@ -136,11 +135,12 @@
       </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
       <div class="footer-logo">
         <img src="images/logo.jpg" alt="Library Logo" />
-        <p><strong>The Vallejo</strong><br />Public Library</p>
+        <div class="footer-title">
+          <p><strong>The Vallejo</strong> Public Library</p>
+        </div>
       </div>
       <div class="footer-info">
         <div class="location">
@@ -150,7 +150,7 @@
             class="footer-icon"
           />
           <p><strong>Location</strong></p>
-          <p>1526 Book Lane, Vallejo, CA 95489</p>
+          <p>1526 Book Lane,<br />Vallejo, CA 95489</p>
         </div>
         <div class="contact">
           <img
@@ -159,7 +159,7 @@
             class="footer-icon"
           />
           <p><strong>Contact Us</strong></p>
-          <p>Email: support@vallejolibrary.com</p>
+          <p>Email:support@vallejolibrary.com</p>
           <p>Phone Number: 123-456-7890</p>
         </div>
       </div>
